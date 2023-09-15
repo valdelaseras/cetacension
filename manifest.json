@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "author": "robin.on.branch@gmail.com",
+  "name": "Cetacension",
+  "description": "An extension for dolphins on the internet",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ],
+  "permissions": ["activeTab", "scripting"]
+}
